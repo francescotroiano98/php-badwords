@@ -1,6 +1,6 @@
 <?php
-    $name = $_POST['username'];
-    $surname = $_POST['password'];
+    $paragraph = $_POST['paragraph'];
+    $badword = $_POST['badword'];
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <body>
 
         <h1>
-            <?php echo $name; ?> <?php echo $surname; ?> <?php echo strlen($name . $surname)?>
+            <?php echo $paragraph; ?> <?php echo strlen($paragraph)?>
         </h1>
 
     </body>
