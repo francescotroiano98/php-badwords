@@ -1,6 +1,8 @@
 <?php
     $paragraph = $_POST['paragraph'];
     $badword = $_POST['badword'];
+    $singlewordarray = explode(',', $paragraph);
+    var_dump($singlewordarray)
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +17,8 @@
         <h1>
             <?php echo $paragraph; ?> <?php echo strlen($paragraph)?>
         </h1>
-
+        <h2>
+           
+        </h2>
     </body>
 </html>

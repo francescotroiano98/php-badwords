@@ -11,8 +11,8 @@
         <!--  Il metodo usato per passare i dati : destinatario dei miei dati del form -->
 
         <form action="./server.php" method="POST">
-            <input type="text" placeholder='nome utente' name="paragraph">
-            <input type="text" placeholder='password' name="badword">
+            <input type="text" placeholder='paragraph' name="paragraph">
+            <input type="text" placeholder='badword' name="badword">
 
             <button type="submit">
                 Invia il form
