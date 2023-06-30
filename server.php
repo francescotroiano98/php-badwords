@@ -23,7 +23,7 @@
                 if($word === $badword){
                     $word = '***';
                 }
-                echo $word;
+                echo $word . ' ';
             }
             ?>
         </h2>
