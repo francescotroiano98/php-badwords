@@ -1,7 +1,7 @@
 <?php
     $paragraph = $_POST['paragraph'];
     $badword = $_POST['badword'];
-    $singlewordarray = explode(',', $paragraph);
+    $singlewordarray = explode(' ', $paragraph);
     var_dump($singlewordarray)
 ?>
 
@@ -18,7 +18,14 @@
             <?php echo $paragraph; ?> <?php echo strlen($paragraph)?>
         </h1>
         <h2>
-           
+        <?php
+            foreach ($singlewordarray as $word) {
+                if($word === $badword){
+                    $word = '***';
+                }
+                echo $word;
+            }
+            ?>
         </h2>
     </body>
 </html>
